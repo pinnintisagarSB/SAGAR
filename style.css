@@ -401,7 +401,7 @@ box-shadow:  0 0 1.8rem 0 #030e12da;
     #about .about-me {
         padding: 1rem 2.5rem;
         width: 50%;
-        height: 55rem;
+        height: auto;
     }
     #about h1 span {
         font-size: 6.4rem;
