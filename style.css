@@ -389,9 +389,10 @@ box-shadow:  0 0 1.8rem 0 #030e12da;
         height: auto;
     }
     #about .about-me p {
-        padding: 0.2rem;
+        padding: 1rem;
         margin: auto;
         margin-top: 0;
+        font-size: 2.5rem;
     }
     #about span {
         font-size: 2.2rem;
