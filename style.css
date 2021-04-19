@@ -674,6 +674,7 @@ box-shadow:  0 0 1.8rem 0 #030e12da;
     #services h1 {
         font-size: 11rem;
         font-weight: 400;
+        margin-top: 10rem;
     }
     #services .service-items {
         display: flex;
