@@ -1,0 +1,783 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+header #icon{
+    color: white;
+    font-size: 3rem;
+    display: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.6s ease;
+    padding: 3.5rem 10rem;
+    z-index: 10000;
+}
+header.sticky{
+    background: crimson;
+    padding: .7rem 10rem;
+}
+header.sticky .logo{
+     color: white;
+     transition: .3s ease;
+}
+header.sticky .logo:hover{
+    color: #030e12;
+}
+header.sticky ul li a{
+    color: white;
+    transition: .3s ease;
+}
+header.sticky ul li a:hover{
+    color: #030e12;
+}
+header .logo{
+    position: relative;
+    color: crimson;
+    text-decoration: none;
+    padding-top: 0;
+}
+header a{
+    font-family: 'Mulish', sans-serif;
+    font-size: 3.8rem;
+    font-weight: 600;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+header ul li a{
+    position: relative;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    color: crimson;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+#home{
+    background-image: url(images/home.jpg);
+    height: 72rem;
+    width: 100%;
+    background-size: cover;
+    box-shadow:  0 0 1.8rem 0 #030e12da;
+    position: relative;
+    z-index: 1;
+}
+#home::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.5;
+    z-index: -1;
+}
+#home .home-page h1{
+  top: 30%;
+  left: 20%;  
+  position: absolute;
+  font-size: 6.5rem;
+  line-height: 6.2rem;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+}
+#home .home-page span{
+    color: crimson;
+}
+#home .home-page .btn{
+    text-decoration: none;
+    color: #030e12;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    padding: .9rem 1rem;
+    position: absolute;
+    top: 61%;
+    left: 20%;
+    background-color: #5bccf6;
+    border-radius: 10px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    border: .3rem solid #030e12;
+    transition: all .3s ease;
+    font-family: 'Mulish', sans-serif;
+}
+#home .home-page .btn:hover{
+    background-color: crimson;
+    color: white;
+    transform: translateY(-7%);
+}
+#services .service-item img{
+    height: 8rem;
+    width: 8rem;
+    margin-top: 2rem;
+}
+#services{
+    padding: 5rem 1rem;
+    margin-bottom: 10rem;
+}
+#services h1{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 6.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 5rem 2rem;
+    padding-top: 2rem;
+    font-family: 'Mulish', sans-serif;
+    color: #030e12;
+}
+#services h1 span{
+    color: crimson;
+}
+#services .service-items{
+    display: flex;
+    flex-basis: 20%;
+    justify-content: space-evenly; 
+}
+#services .service-item{
+    align-items: center;
+    background-color: #030e12;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem;
+    height: 33.1rem;
+    width: 22.1rem;
+    border-radius: 1.8rem;
+    box-shadow: 0 0 1.8rem 0 #030e12da;
+    transition: .3s ease;
+    border: .3rem solid crimson;
+}
+#services .service-item:hover{
+    transform: translateY(-5%);
+}
+#services .service-item h2{
+    font-size: 2.2rem;
+    margin: 1rem .5rem;
+    color: crimson;
+}
+#services .service-item p{
+    color: white;
+    font-size: 1.7rem;
+}
+#services .service-item span{
+    color: crimson;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+#about{
+    padding: 3rem 0;
+    background-color: #030e12;
+    height: 74rem;
+    box-shadow: 0 0 2rem 0 #030e12da ;
+}
+#about h1{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 6.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 5rem 2rem;
+    color: crimson;
+    font-family: 'Mulish', sans-serif;
+}
+#about span{
+    color: crimson;
+}
+#about h1 span{
+    color: white;
+}
+#about .about-img img{
+    height: 33rem;
+    width: 33rem;
+    box-shadow: 20px 20px 20px 20px rgba(0,0,0,0.5);
+    border-radius: 50%;
+    transition: .3s ease;
+    border: .3rem solid rgba(255,255,255,0.1);
+}
+#about .about-img h2:hover{
+    transform: translateY(-5%);
+}
+#about .about-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-basis: 50%;
+}
+#about .about-img{
+    align-items: center;
+    margin-left: 10rem;
+    padding: 1rem;
+}
+#about .about-me{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-left: 7rem;
+    padding: 1.1rem 3rem;
+    width: 50%;
+    height: 40rem;
+    overflow: hidden;
+    background: rgba(255,255,255,0.1);
+    border-radius: 1rem;
+    border-top: .1rem solid rgba(255,255,255,0.5);
+    border-left: .1rem solid rgba(255,255,255,0.5);
+    box-shadow: 2rem 2rem 2rem 2rem rgba(0,0,0,0.5);
+}
+#about .about-img h2{
+    text-align: center;
+    justify-content: center;
+    font-size: 2.4rem;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 1rem;
+    border: .3rem solid rgba(255,255,255,0.1);
+    box-shadow: 2rem 2rem 2rem 2rem rgba(0,0,0,0.5);
+    padding: 1rem;
+    margin-top: 1.5rem;
+    letter-spacing: 0.01rem;
+    transition: 0.3s ease;
+    color: white;
+}
+#about .about-me h2{
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 1.2rem;
+    margin: 2rem;
+    color: crimson;
+}
+#about .about-me p{
+    font-size: 2rem;
+    padding: 1.2rem;
+    margin: 2.1rem;
+    color: white;
+}
+#contact .contact-item img{
+    height: 8rem;
+    width: 8rem;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+#contact h1{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 6.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 0 2rem;
+    padding-top: 100px;
+    padding-bottom: 10rem;
+    font-family: 'Mulish', sans-serif;
+    color: #030e12;
+}
+#contact span{
+    color: crimson;
+}
+#contact .contact-items{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 10rem;
+}
+#contact .contact-item{
+    background-color: #030e12;
+    border-radius: 2rem;
+    box-shadow: 0 0 2rem 0 #030e12da;
+    border: .3rem solid crimson;
+    height: 22rem;
+    width: 37rem;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    transition: .3s ease;
+}
+#contact .contact-item:hover{
+  transform: translateY(-5%);
+}
+#contact .contact-item h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: crimson;
+}
+#contact .contact-item p{
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1rem;
+    color: white;
+}
+#footer{
+height: 22rem;
+width: auto;
+background-color: #030e12;
+text-align: center;
+align-items: center;
+margin-top: 10rem;
+padding-bottom: 1rem;
+box-shadow:  0 0 1.8rem 0 #030e12da;
+}
+#footer .social-icons img{
+    height: 5.7rem;
+    width: 5.7rem;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: .3s ease;
+}
+#footer .social-icons img:hover{
+    background-color: #fcde67;
+}
+#footer p{
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: crimson;
+}
+#footer a,h1{
+    text-decoration: none;
+    color: crimson;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    transition: .3s ease;
+    font-family: 'Mulish', sans-serif;
+}
+#footer a:hover{
+    color: #fcde67;
+}
+#footer h3{
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem;
+    color: white;
+}
+@media(min-width: 1024px){
+    header ul {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30rem;
+    }
+    #services .service-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    #about .about-container {
+        margin: 0 3rem;
+    }
+    #about{
+        height: auto;
+    }
+    #about .about-me p {
+        padding: 0.2rem;
+        margin: auto;
+        margin-top: 0;
+    }
+    #about span {
+        font-size: 2.2rem;
+        font-weight: 600;
+    }
+    #about .about-me {
+        padding: 1rem 2.5rem;
+        width: 50%;
+        height: 55rem;
+    }
+    #about h1 span {
+        font-size: 6.4rem;
+        font-weight: 500;
+    }
+    #about {
+        padding: 3rem 0;
+        background-color: #030e12;
+        height: auto;
+    }
+}
+@media(max-width: 998px) {
+    header ul {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30rem;
+    }
+    html{
+        font-size: 55%;
+    }
+    #about{
+        height: auto;
+    }
+    #about .about-me p {
+        font-size: 1.9rem;
+        padding: 1rem;
+        margin: 1.7rem;
+    }
+    #about .about-me h2 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        padding: 1rem;
+        margin: 1.2rem;
+    }
+    #about .about-me {
+        margin-left: 0;
+        height: auto;
+    }
+    #services .service-item img {
+        height: 7rem;
+        width: 7rem;
+    }
+    #services .service-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    #services .service-item {
+        padding: 1.2rem;
+        margin: 2.2rem;
+        height: 35rem;
+        width: 24rem;
+    }
+    #services .service-item h2 {
+        font-size: 2.4rem;
+    }
+    #services .service-item p {
+        font-size: 1.9rem;
+        padding: .5rem;
+    }
+    #services .service-item span {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
+@media(min-width:999px) and (max-width: 1023px){
+    header ul {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 23rem;
+    }
+    #services .service-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    #about .about-container {
+        justify-content: space-between;
+    }
+    #about .about-me {
+        margin: auto;
+        padding: 1.1rem 3rem;
+        width: 45rem;
+        height: auto;
+    }
+    #about {
+        padding: 2rem 0;
+        height: auto;
+        box-shadow: 0 0 2rem 0 #030e12da;
+    }
+    #about .about-me h2 {
+        font-size: 2.5rem;
+        padding: 1rem;
+        margin: 1.5rem;
+    }
+    #about .about-me p {
+        font-size: 2.2rem;
+        padding: 1rem;
+        margin: 2rem;
+        color: white;
+    }
+    #about span {
+        font-size: 2.3rem;
+        font-weight: 500;
+    }
+    #about .about-img h2 {
+        font-size: 3rem;
+    }
+    #about h1 span {
+        font-size: 6.4rem;
+    }
+}
+@media(max-width: 768px){
+    html{
+        font-size: 45%;
+    }
+    header #icon{
+        display: block;
+        font-size: 5rem;
+    }
+    header .logo{
+        font-size: 5rem;
+    }
+    header ul{
+        display: none;
+    }
+    #home .home-page .btn {
+        top: 66%;
+    }
+    #services .service-item {
+        padding: 1.5rem;
+        margin: 2.5rem;
+        height: auto;
+        width: 25rem;
+    }
+    #services .service-item h2 {
+        font-size: 2.8rem;
+        margin: 1rem .7rem;
+    }
+    #services .service-item p {
+        font-size: 1.9rem;
+    }
+    #services .service-item span {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    #services .service-item img {
+        height: 8rem;
+        width: 8rem;
+    }
+    #about {
+        height: auto;
+    }
+    #about .about-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #about .about-img {
+        margin-left: 0rem;
+    }
+    #about .about-img h2 {
+        font-size: 2.8rem;
+        padding: 1rem;
+        margin-top: 3.5rem;
+    }
+    #about .about-me h2 {
+        margin: .5rem;
+    }
+    #about .about-me {
+        padding: 1.1rem 3rem;
+        height: auto;
+        margin-top: 2.2rem 0;
+    }
+    #about .about-me p{
+        font-size: 2.3rem;
+    }
+    #about span {
+        font-weight: 600;
+        font-size: 2.2rem;
+    }
+    #about h1 span{
+        font-size: 6.4rem;
+    }
+    #contact .contact-items {
+        flex-direction: column;
+        padding-bottom: 7rem;
+    }
+    #contact .contact-item img {
+        height: 8.5rem;
+        width: 8.5rem;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+    #contact .contact-item h2 {
+        font-size: 3rem;
+    }
+    #contact .contact-item p {
+        font-size: 2rem;
+        padding: 1.2rem;
+    }
+    #footer {
+        height: 30rem;
+    }
+    #footer a, h1 {
+        font-size: 4.5rem;
+        padding-top: 4rem;
+        margin-top: 3rem;
+    }
+    #footer h3 {
+        font-size: 2.5rem;
+        padding: 1.8rem;
+    }
+    #footer .social-icons img {
+        height: 6.5rem;
+        width: 6.5rem;
+    }
+    #footer p {
+        padding-top: 1.2rem;
+        font-size: 1.8rem;
+    }
+}
+@media(max-width: 468px){
+    html{
+         font-size: 29.25%;
+    }
+    header .logo {
+        position: relative;
+        color: crimson;
+        text-decoration: none;
+        padding-top: 2rem;
+    }
+    header a {
+        font-family: 'Mulish', sans-serif;
+        font-size: 7rem;
+        font-weight: 600;
+    }
+    header ul{
+        display: none;
+    }
+    #home{
+        height: 120rem;
+    }
+    #home .home-page h1 {
+        font-size: 10rem;
+        line-height: 9.5rem;
+    }
+    #home .home-page .btn {
+        margin-top: -1rem;
+        padding: 1rem 1rem;
+        border-radius: 1rem;
+        font-size: 4.4rem;
+        border-radius: 1.7rem;
+    }
+    #services h1 {
+        font-size: 11rem;
+        font-weight: 400;
+    }
+    #services .service-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #services .service-item {
+        padding: 3.5rem;
+        margin: 4rem;
+        height: 85rem;
+        width: 56rem;
+        border-radius: 5rem;
+        border: 1.2rem solid crimson;
+        box-shadow: 0rem 0rem 2rem 1.8rem #030e12ab;
+    }
+    #services .service-item img {
+        height: 20rem;
+        width: 20rem;
+        margin-top: 5rem;
+    }
+    #services .service-item h2 {
+        font-size: 5.5rem;
+    }
+    #services .service-item p {
+        font-size: 4.2rem;
+    }
+    #services .service-item span {
+        font-size: 5rem;
+        font-weight: 400;
+    }
+    #about {
+        height: auto;
+    }
+    #about h1{
+        font-size: 10rem;
+    }
+    #about h1 span{
+        font-size: 10rem;
+    }
+    #about .about-img img {
+        height: 60rem;
+        width: 60rem;
+        box-shadow: 20px 20px 20px 20px rgb(0 0 0 / 50%);
+        border-radius: 50%;
+        transition: .3s ease;
+        border: .3rem solid rgba(255,255,255,0.1);
+    }
+    #about .about-img h2 {
+        font-size: 6rem;
+        padding: 1.5rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    #about .about-me {
+        padding: 2rem 2rem;
+        height: auto;
+        margin-top: 2.2rem 0;
+        width: 80rem;
+    }
+    #about .about-me h2 {
+        margin: 1.5rem;
+        font-size: 6rem;
+    }
+    #about .about-me p {
+        font-size: 4.3rem;
+    }
+    #about .about-container {
+        margin-bottom: 10rem;
+    }
+    #about span {
+        font-weight: 500;
+        font-size: 6rem;
+    }
+    #contact h1 {
+        font-size: 10rem;
+    }
+    #contact .contact-item {
+        height: 42rem;
+        width: 57rem;
+        border: 1.2rem solid crimson;
+    }
+    #contact .contact-item img {
+        height: 15rem;
+        width: 15rem;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+    #contact .contact-item h2 {
+        font-size: 6rem;
+    }
+    #contact .contact-item p {
+        font-size: 3rem;
+        padding: 1.2rem;
+    }
+    #footer {
+        height: auto;
+    }
+    #footer a, h1 {
+        font-size: 6.5rem;
+        margin-top: 7rem;
+    }
+    #footer h1{
+        padding-top: 8rem;
+    }
+    #footer h3 {
+        font-size: 4rem;
+        padding: 2.5rem;
+    }
+    #footer .social-icons{
+        margin: 3rem 0;
+    }
+    #footer .social-icons img {
+        height: 10rem;
+        width: 10rem;
+    }
+    #footer p {
+        padding-top: 2rem;
+        font-size: 2.5rem;
+    }
+}
