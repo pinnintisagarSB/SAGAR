@@ -555,8 +555,12 @@ box-shadow:  0 0 1.8rem 0 #030e12da;
         position: relative;
         display: block;
     }
+    .logo.cl{
+        color: white;
+    }
     header .logo{
         font-size: 5rem;
+        position: relative;
     }
     header ul{
         display: none;
