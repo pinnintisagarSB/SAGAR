@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script>  
-        $(document).ready(function(){
-         $('#icon').click(function(){
-           $("header").toggleClass("show");
-           });
-       });
-       </script>
+    <script>
+        $(document).ready(function () {
+            $('#icon').click(function () {
+                $("header").toggleClass("show");
+            });
+        });
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <title>SAGAR</title>
 </head>
+
 <body>
     <header>
         <a href="#" class="logo">SAGAR</a>
@@ -32,6 +36,14 @@
             <div class="fa fa-bars"></div>
         </label>
     </header>
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
     <section id="home">
         <div class="home-page">
             <h1>Hello,<br>My name is<br><span>Sagar</span></h1>
@@ -76,8 +88,12 @@
                 <h2>Pinninti Sagar</h2>
             </div>
             <div class="about-me">
-                  <h2>Student/Front End Web Developer</h2>
-                  <p>I am student/learner at LIET in Andhra pradhesh, India. Pursuing my B.tech Degree in CSE branch, I always like to do something new stuffs, during which I got very much attached to <span>WEB DEVELOPMENT</span> and this became my daily routine. So, through this website I want to reach out peoples who are willing or finding for someone to help them in making website and I don't want to waste the things which I have learned.</p>
+                <h2>Student/Front End Web Developer</h2>
+                <p>I am student/learner at LIET in Andhra pradhesh, India. Pursuing my B.tech Degree in CSE branch, I
+                    always like to do something new stuffs, during which I got very much attached to <span>WEB
+                        DEVELOPMENT</span> and this became my daily routine. So, through this website I want to reach
+                    out peoples who are willing or finding for someone to help them in making website and I don't want
+                    to waste the things which I have learned.</p>
             </div>
         </div>
     </section>
@@ -108,14 +124,16 @@
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script>
-        $(window).scroll(function(){
-            if($(window).scrollTop()){
+        $(window).scroll(function () {
+            if ($(window).scrollTop()) {
                 $("header").addClass("sticky");
             }
-            else{
+            else {
                 $("header").removeClass("sticky");
             }
         });
     </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
