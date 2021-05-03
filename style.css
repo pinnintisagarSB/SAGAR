@@ -24,6 +24,28 @@ header{
     padding: 3.5rem 10rem;
     z-index: 10000;
 }
+.mobile-nav{
+    background-color: crimson;
+    height: 100vh;
+    left: -100%;
+    position: relative;
+    display: none;
+}
+.mobile-nav ul{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 33rem;
+}
+.mobile-nav ul li{
+    list-style: none;
+}
+.mobile-nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 5rem;
+    font-weight: 500;
+}
 header.sticky{
     background: crimson;
     padding: .7rem 10rem;
@@ -525,6 +547,13 @@ box-shadow:  0 0 1.8rem 0 #030e12da;
     header #icon{
         display: block;
         font-size: 5rem;
+    }
+    .mobile-nav.clk{
+        background-color: crimson;
+        height: 100vh;
+        left: 0%;
+        position: relative;
+        display: block;
     }
     header .logo{
         font-size: 5rem;
