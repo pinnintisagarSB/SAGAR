@@ -44,7 +44,7 @@ header{
 .mobile-nav ul li a{
     text-decoration: none;
     color: black;
-    font-size: 5rem;
+    font-size: 7rem;
     font-weight: 500;
 }
 header.sticky{
@@ -98,7 +98,7 @@ header ul li a{
 
 #home{
     background-image: url(images/home.jpg);
-    height: 72rem;
+    height: 75.2rem;
     width: 100%;
     background-size: cover;
     box-shadow:  0 0 1.8rem 0 #030e12da;
