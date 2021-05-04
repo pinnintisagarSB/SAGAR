@@ -552,8 +552,9 @@ box-shadow:  0 0 1.8rem 0 #030e12da;
     .mobile-nav.clk{
         background-color: crimson;
         left: 0%;
-        position: relative;
+        position: fixed;
         display: block;
+        z-index: 1000;
     }
     .logo.cl{
         color: white;
